@@ -81,6 +81,21 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="map"
+        options={{
+          title: "Map",
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              size={28}
+              name={
+                focused ? "information-circle" : "information-circle-outline"
+              }
+              color={color}
+            />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
