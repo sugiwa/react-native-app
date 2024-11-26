@@ -66,6 +66,21 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="image"
+        options={{
+          title: "Image",
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              size={28}
+              name={
+                focused ? "information-circle" : "information-circle-outline"
+              }
+              color={color}
+            />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
